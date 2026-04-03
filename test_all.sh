@@ -1,5 +1,13 @@
 for (( i=01; i<10; i++ ))
 do
-	./test_case.sh 0$i
+	rm -rf *
+	cp ../test_cases/* .
+	cp ../rsh .
+	echo 0$i
+	./../test_case.sh 0$i
 done
-./test_case.sh 10
+rm -rf *
+cp ../test_cases/* .
+cp ../rsh .
+echo 10
+./../test_case.sh 10

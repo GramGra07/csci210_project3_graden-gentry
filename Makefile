@@ -8,3 +8,5 @@ myspawn: myspawn.c
 
 clean:
 	rm -f rsh
+	rm -rf clean/*
+	cp test_cases/* clean/
