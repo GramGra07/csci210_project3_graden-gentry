@@ -8,5 +8,9 @@ myspawn: myspawn.c
 
 clean:
 	rm -f rsh
+
+@PHONY: clean_dir
+
+clean_dir:
 	rm -rf clean/*
 	cp test_cases/* clean/
